@@ -12,7 +12,6 @@ document.getElementById("cossine-result").addEventListener("click", function(eve
   document.getElementById("side-c-result").value = result;
 })
 
-
 function asymptopeType(m, n) {
   if (m === n) {
     return "Asymptote is Horizontal";
