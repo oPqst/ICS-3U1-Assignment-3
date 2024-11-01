@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 – Vanilla JavaScript</title>
+  <link rel="stylesheet" href="/Assignment 3/style.css">
+</head>
+
+
+<body>
+  
+  <div class="container">
+
+    <div class="cosin-calc">
+      <form class="cosine-law-calc">
+        <h1>Cosine Law Calculator</h1>
+        <label for="side-a">Side A:</label>
+        <input type="number" id="side-a" name="side-a">
+        <label for="side-b">Side B:</label>
+        <input type="number" id="side-b" name="side-b">
+        <label for="angle-c">Angle C:</label>
+        <input type="number" id="angle-c" name="angle-c">
+        <label for="side-c">Side C (Result): </label>
+        <input type="number" id="side-c-result" name="side-c-result" readonly>
+        <button type="submit" id="cossine-result">Calculate</button>
+      </form>
+    </div>
+
+    <div class="asymp-finder">
+      <form class="asymo-type-finder">
+        <h1>Asymptote Type Finder</h1>
+        <label for="value-m">M Value:</label>
+        <input type="number" id="value-m" name="value-m">
+        <label for="value-n">N Value:</label>
+        <input type="number" id="value-n" name="value-n">
+        <label for="asym-type">Asymptote Type (Result): </label>
+        <input id="asym-type" name="asym-type" readonly>
+        <button type="submit" id="asym-result">Calculate</button>
+      </form>
+    </div>
+
+    <div class="gregory-approx">
+      <form class="gregory-approx-calc">
+        <h1>Gregory Pi Approximation</h1>
+        <label for="value-n-pi">N Value:</label>
+        <input type="number" id="value-n-pi" name="value-n-pi">
+        <label for="pi-approx">Pi Approximation (Result): </label>
+        <input id="pi-approx" name="pi-approx" readonly>
+        <button type="submit" id="gregory-result">Calculate</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src=" script.js">
+  </script>
+</body>
+
+</html>
