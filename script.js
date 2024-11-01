@@ -5,9 +5,9 @@ function cosineLaw(a, b, C) {
 
 document.getElementById("cossine-result").addEventListener("click", function(event) {
   event.preventDefault();
-  const a = (document.getElementById("side-a").value);
-  const b = (document.getElementById("side-b").value);
-  const C = (document.getElementById("angle-c").value);
+  const a = parseFloat(document.getElementById("side-a").value);
+  const b = parseFloat(document.getElementById("side-b").value);
+  const C = parseFloat(document.getElementById("angle-c").value);
   const result = cosineLaw(a, b, C);
   document.getElementById("side-c-result").value = result;
 })
@@ -31,8 +31,8 @@ function asymptopeType(m, n) {
 
 document.getElementById("asym-result").addEventListener("click", function(event) {
   event.preventDefault();
-  const m = (document.getElementById("value-m").value);
-  const n = (document.getElementById("value-n").value);
+  const m = parseInt(document.getElementById("value-m").value);
+  const n = parseInt(document.getElementById("value-n").value);
   const result = asymptopeType(m, n);
   document.getElementById("asym-type").value = result;
 })
@@ -47,7 +47,7 @@ function piApproximator(piN) {
 
 document.getElementById("gregory-result").addEventListener("click", function(event) {
   event.preventDefault();
-  const piN = (document.getElementById("value-n-pi").value);
+  const piN = parseInt(document.getElementById("value-n-pi").value);
   const result = piApproximator(piN);
   document.getElementById("pi-approx").value = result;
 })
